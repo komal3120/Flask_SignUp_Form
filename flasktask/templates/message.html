@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Form</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style_form.css') }}">
+
+
+	<style>
+		
+.container{
+	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+	background: linear-gradient(to right, #FF4B2B, #FF416C);
+}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container" id="container">
+		{% with messages = get_flashed_messages() %}
+   		{% if messages %}
+      		{% for message in messages %}
+      		<div class="message">
+         		{{ message }}
+         	</div>
+      		{% endfor %}
+   		{% endif %}
+{% endwith %}
+	</div>
+</body>
+</html>

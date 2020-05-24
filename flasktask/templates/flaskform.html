@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>Sign Up Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style_form.css') }}">
+</head>
+<body>
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="/" method="post">
+			<h1>Create Account</h1>
+			<input class="k1" type="text" placeholder="Full Name" name="name" value=""required="" data-validate="Enter Full Name"/>
+			<input type="email" placeholder="Email" name="email" value=""required="" data-validate="Enter Email Address"/>
+			<input type="password" placeholder="Password" name="password" value=""required="" data-validate="Enter Password"/>
+			<button>Sign Up</button>
+
+			<div class="social-container">
+				<a href="https://www.linkedin.com/in/komal-pal-6527b61a5" class="social"><img src="{{ url_for('static', filename='images/linkedin.png') }}"></a>
+				<a href="https://github.com/komal3120" class="social"><img src="{{ url_for('static', filename='images/github.png') }}"></a>
+				<a href="mailto:komalpal0000@gmail.com" class="social"><img src="{{ url_for('static', filename='images/gmail.png') }}"></a>
+			</div>
+			<span>Contact Us...</span>
+
+		</form>
+	</div>
+	<div class="form-container sign-container">
+		<form action="#">
+			<h1 class="heads">Knowlegde Is Power
+			</h1>
+			<div class="social-container">
+				<a href="https://www.linkedin.com/in/komal-pal-6527b61a5" class="social"><img src="{{ url_for('static', filename='images/linkedin.png') }}"></a>
+				<a href="https://github.com/komal3120" class="social"><img src="{{ url_for('static', filename='images/github.png') }}"></a>
+				<a href="mailto:komalpal0000@gmail.com" class="social"><img src="{{ url_for('static', filename='images/gmail.png') }}"></a>
+			</div>
+			<h2 class="headss"></br>Discover Greate Opportunies With Us...</h2>
+	</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome!...</h1>
+				<p>To keep connected with us please Sign Up with your personal info</p>
+				<button class="ghost" id="back">Back</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p>
+		Created by Komal
+	</p>
+</footer>
+<script type="text/javascript" src="{{url_for('static', filename='javascript/form_script.js') }}"></script>	
+
+</body>
+</html>
